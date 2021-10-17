@@ -6,10 +6,13 @@ type Props = {
 
 interface AppContextInterface {
   list: Array<string>;
-  addItem: (item: string) => void;
+  addItem?: (item: string) => void;
 }
 
-export const AppContext = createContext<AppContextInterface | null>(null);
+const defaultState = {
+  list: [],
+};
+export const AppContext = createContext<AppContextInterface>(defaultState);
 
 const AppProvider = ({ children }: Props) => {
   const [list, setList] = useState<Array<string>>(["test", "one", "two"]);
