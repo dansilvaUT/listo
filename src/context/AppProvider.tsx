@@ -7,6 +7,7 @@ type Props = {
 interface AppContextInterface {
   list: Array<string>;
   addItem?: (item: string) => void;
+  deleteItem?: (item: string, list: Array<string>) => void;
 }
 
 const defaultState = {
@@ -21,8 +22,14 @@ const AppProvider = ({ children }: Props) => {
     setList([...list, item]);
   };
 
+  const deleteItem = (item: string, list: Array<string>) => {
+    const idx = list.findIndex((todo) => todo === item);
+    list.splice(idx, 1);
+    setList([...list]);
+  };
+
   return (
-    <AppContext.Provider value={{ list, addItem }}>
+    <AppContext.Provider value={{ list, addItem, deleteItem }}>
       {children}
     </AppContext.Provider>
   );
