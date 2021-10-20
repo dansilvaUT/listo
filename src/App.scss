@@ -3,6 +3,12 @@ $orange: #f75814;
 $green: #14f776;
 $light-blue: #14f7ec;
 $black: #1b1c1c;
+$blue: #15bccf;
+$white: white;
+
+body {
+  background: $blue;
+}
 
 @mixin flex-row {
   display: flex;
