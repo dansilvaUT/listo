@@ -1,0 +1,6 @@
+@import "../../../App.scss";
+
+.ListItem {
+  @include flex-row;
+  width: 100%;
+}

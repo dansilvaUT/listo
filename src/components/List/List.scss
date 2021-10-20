@@ -1,0 +1,9 @@
+@import "../../App.scss";
+
+.List {
+  list-style: none;
+  @include flex-column;
+  width: 300px;
+  padding: 0;
+  min-height: 200px;
+}
