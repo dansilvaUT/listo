@@ -1,4 +1,11 @@
-@use "../../Main.scss";
+@import "../../App.scss";
 
 .Header {
+  color: $black;
+  @include flex-row;
+  background-color: $light-blue;
+
+  &-heading {
+    font-size: $large;
+  }
 }

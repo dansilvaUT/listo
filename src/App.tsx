@@ -1,7 +1,7 @@
 import AppProvider from "./context";
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
-import "./Main.scss";
+import "./App.scss";
 
 function App() {
   return (
