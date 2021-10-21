@@ -2,5 +2,25 @@
 
 .ListItem {
   @include flex-row;
+  justify-content: space-between;
   width: 100%;
+  background-color: $light-blue;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.486);
+
+  &-btn {
+    border: none;
+    background-color: $orange-light;
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  &-btn:hover {
+    background-color: $orange;
+  }
 }

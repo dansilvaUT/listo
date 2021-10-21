@@ -7,7 +7,10 @@ const ListItem = (param1: { item: string; idx: string }) => {
   return (
     <div key={param1.idx} className="ListItem">
       <li>{param1.item}</li>
-      <button onClick={() => deleteItem!(param1.item, list)}>
+      <button
+        onClick={() => deleteItem!(param1.item, list)}
+        className="ListItem-btn"
+      >
         Mark Complete
       </button>
     </div>

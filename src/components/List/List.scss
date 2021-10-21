@@ -3,6 +3,7 @@
 .List {
   list-style: none;
   @include flex-column;
+  justify-content: space-evenly;
   width: 300px;
   padding: 0;
   min-height: 200px;
