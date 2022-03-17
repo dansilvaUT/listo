@@ -3,13 +3,13 @@ import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import "./App.scss";
 
-function App() {
+const App = () => {
   return (
     <AppProvider>
       <Header />
       <Wrapper />
     </AppProvider>
   );
-}
+};
 
 export default App;
